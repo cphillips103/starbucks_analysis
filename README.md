@@ -1,4 +1,4 @@
-![img1](tbd)
+![img1]("https://github.com/cphillips103/starbucks_analysis/blob/main/images/WIP.png")
 # Udacity Starbucks Project
 
 # Udacity Data Science Nanodegree
