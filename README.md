@@ -1,4 +1,4 @@
-<img src="https://github.com/cphillips103/starbucks_analysis/blob/main/images/udacity_logo.png" width="136" height="64">
+<img src="https://github.com/cphillips103/starbucks_analysis/blob/main/images/udacity_logo.png" width="204" height="96">
 
 # Udacity Starbucks Project
 
