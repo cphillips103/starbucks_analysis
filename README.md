@@ -4,7 +4,8 @@
 # Udacity Data Science Nanodegree
 
 ## Starbucks
-![img1](tbd)
+![Starbucks Logo](https://github.com/cphillips103/starbucks_analysis/blob/main/images/Starbucks-Logo.jpg)
+
 The dataset provided in this portfolio exercise was originally used as a take-home assignment provided by Starbucks for their job candidates. The data for this exercise consists of about 120,000 data points split in a 2:1 ratio among training and test files.
 
 In the experiment simulated by the data, an advertising promotion was tested to see if it would bring more customers to purchase a specific product priced at $10. Since it costs the company 0.15 to send out each promotion, it would be best to limit that promotion only to those that are most receptive to the promotion.
@@ -28,12 +29,35 @@ $$ NIR = (10\\cdot purch_{treat} - 0.15 \\cdot cust_{treat}) - 10 \\cdot purch_{
 ![img1](tbd)
 
 
-Step 1: ETL Pipeline
- ![img1](tbd)
+EDA and Model considerations:
 
-Step 2: ML Pipeline Preparation
- ![img1](tbd)
+![Training Data](https://github.com/cphillips103/starbucks_analysis/blob/main/images/training_table.png)
 
+Training Data shows layout of the data frame and the features V1 through V7
+
+![Promotion Split](https://github.com/cphillips103/starbucks_analysis/blob/main/images/promotion_split.png)
+
+The promotion split chart shows that the training data is evenly divided between customers that are promoted to or not promoted to.
+
+![Purcashe Split](https://github.com/cphillips103/starbucks_analysis/blob/main/images/promotion_split.png)
+
+However, when we look at the proportions of Non-purchasers and Purchasers, we see that the data is not very balanaced since there is only a very small number of purchasers regardless of promotion or non-promotion.
+
+This small number of purchsers and model prediction based on customer features is closer to modeling with SPAM or Fraud detection since those models need to look for unusual activity in large data sets.
+
+Such being the case, the modeling process for the Starbucks data needs to take into account that there are only a small number of positive purchase cases in a large data set.
+
+An illustration of the variance between Purchasers and Non-Purchasers:
+
+
+![Purchase Split](https://github.com/cphillips103/starbucks_analysis/blob/main/images/purchase_histograms.png)
  
 
+ The histograms of the customer attributes shows that there are only slight variations between those that purchase and those that don't.
+
+ The split between Promoted and Non-Promoted purchasers finally shows some variation in the attributes, but again, the total purchasers is a small signal in the data set.
+
+ ![Purchase Split](https://github.com/cphillips103/starbucks_analysis/blob/main/images/purchase_promo_nopromo_histos.png)
+
+ With such small numbers, the modeling process will need careful attention to boost the small signal in the data so that the model will be able to predict future purchasers based on promotion campaigns.
  
