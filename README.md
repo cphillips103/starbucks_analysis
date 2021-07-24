@@ -4,7 +4,8 @@
 # Udacity Data Science Nanodegree
 
 ## Starbucks
-![Starbucks Logo](https://github.com/cphillips103/starbucks_analysis/blob/main/images/Starbucks-Logo.jpg|width=100px])
+<img src="https://github.com/cphillips103/starbucks_analysis/blob/main/images/Starbucks-Logo.jpg" width="100" height="100">
+
 
 The dataset provided in this portfolio exercise was originally used as a take-home assignment provided by Starbucks for their job candidates. The data for this exercise consists of about 120,000 data points split in a 2:1 ratio among training and test files.
 
