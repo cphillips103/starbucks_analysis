@@ -1,4 +1,5 @@
-![WIP Image](https://github.com/cphillips103/starbucks_analysis/blob/main/images/udacity_logo.png)
+![Udacity Logo](https://github.com/cphillips103/starbucks_analysis/blob/main/images/udacity_logo.png)
+
 # Udacity Starbucks Project
 
 # Udacity Data Science Nanodegree
