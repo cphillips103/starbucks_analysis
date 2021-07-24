@@ -60,4 +60,19 @@ An illustration of the variance between Purchasers and Non-Purchasers:
  ![Purchase Split](https://github.com/cphillips103/starbucks_analysis/blob/main/images/purchase_promo_nopromo_histos.png)
 
  With such small numbers, the modeling process will need careful attention to boost the small signal in the data so that the model will be able to predict future purchasers based on promotion campaigns.
+
+ High Level Model Results:
+
+ Initial results of using KNeighborsClassifier and LogisticRegresssion models yeilded poor results due to the low number of purchases in the data set. Initial results showed high accuracy, but all predictions were "No" purchases, yielding little usefulness.
+
+ DecisionTreeClassifier did being to see some results, but accuracy scores were high with no predictions of purchasing. After applying oversampling with SMOTE, the DecisionTreeClassifier did beging to show some results.
+
+ The highest IRR of 0.0198 and NIR of $416 was generating using DecisionTreeClassifier with oversampling and GridSearchCV to optimize the hyperparameters. Accuracy was 0.57.
+
+ I also used RandomForestClassifier with the oversampled data and GridSearchCV to yeild an IRR of 0.0211 but the NIR fell to $256.45. Accuracy was improved at 0.79
+
+ In summary:
+
+ Modeling with imbalanced data can be acheived with close attention to providing the training portion with enough useful data through various methods like oversampling. Other possibilities would be to create a training set with a higher SMOTE percentage to boost the signal of the purchasing customers.
+
  
